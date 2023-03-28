@@ -1,16 +1,18 @@
+import React from "react";
+import { LoginForm } from "./Login/LoginForm/LoginForm";
+// import { Registration } from "./Login/Registration/Registration";
+import { Navbar } from "./Layout/Navbar/Navbar";
+import { Home } from "./Layout/Home/Home";
+import style from './App.module.css'
+
+
 export const App = () => {
+
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div className={style.App}>
+      <LoginForm />
+      <Navbar />
+      <Home />
     </div>
   );
-};
+}
