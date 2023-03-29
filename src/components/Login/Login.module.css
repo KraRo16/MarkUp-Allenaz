@@ -5,8 +5,18 @@
   flex-direction: column;
 }
 
+    .auth_form_container {
+      padding: 80px;
+      border: 1px solid white;
+      border-radius: 10px;
+      margin: 8px;
+    }
+
 .section{
-    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .auth_form_title {
@@ -60,11 +70,16 @@
   text-decoration: underline;
 } */
 
-@media screen and (min-width: 600px) {
+/* @media screen and (min-width: 600px) {
   .auth_form_container {
     padding: 80px;
     border: 1px solid white;
     border-radius: 10px;
     margin: 8px;
   }
+} */
+
+
+.logo_title_color{
+color: rgb(0, 165, 255);
 }

@@ -1,21 +1,47 @@
-import React, {useState} from 'react';
+import React from 'react';
 import style from './Navbar.module.css';
 import { MdLogout } from 'react-icons/md';
-import { BsCaretDownFill, BsCaretUpFill } from 'react-icons/bs';
-import { Subnav } from './Subnav/Subnav';
+// import { BsCaretDownFill, BsCaretUpFill } from 'react-icons/bs';
+// import { Subnav } from './Subnav/Subnav';
 
 export const Navbar = () => {
-  const [showMenu, setShowMenu] = useState('');
+  // const [showMenu, setShowMenu] = useState('');
 
-  function handleMenuClick() {
-    setShowMenu(!showMenu);
-  }
+  // function handleMenuClick() {
+  //   setShowMenu(!showMenu);
+  // }
 
   return (
     <div className={style.navigation}>
       <header className={style.header_navbar}>
-        <h1 className={style.header_title}>AllyArm</h1>
-        <form>
+        <h1 className={style.header_title}>
+          Ally<span className={style.logo_title_color}>Arm</span>
+        </h1>
+        <nav className={style.subnavigation}>
+          <ul className={style.sub_list}>
+            <li className={style.sub_item}>
+              <a className={style.sub_item_link} href="/">
+                Error/Warning
+              </a>
+            </li>
+            <li className={style.sub_item}>
+              <a className={style.sub_item_link} href="/">
+                Exercises
+              </a>
+            </li>
+            <li className={style.sub_item}>
+              <a className={style.sub_item_link} href="/">
+                Setting
+              </a>
+            </li>
+            <li className={style.sub_item}>
+              <a className={style.sub_item_link} href="/">
+                Diagnostics
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <form className={style.header_form}>
           <input
             className={style.header_search_input}
             type="text"
@@ -35,10 +61,10 @@ export const Navbar = () => {
           </button>
         </div>
       </header>
-      <button className={style.header_subnav_btn} onClick={handleMenuClick}>
-        {showMenu ? <BsCaretUpFill size={18} /> : <BsCaretDownFill size={18} />}
+      <button className={style.header_subnav_btn}>
+        {/* {showMenu ? <BsCaretUpFill size={18} /> : <BsCaretDownFill size={18} />} */}
       </button>
-      {showMenu && <Subnav />}
+      {/* {showMenu && <Subnav />} */}
     </div>
   );
 };

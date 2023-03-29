@@ -1,17 +1,23 @@
 import React, {useState} from 'react';
 import style from '../Login.module.css'
 
-export const LoginForm = () => {
+export const LoginForm = ({onLogin}) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
+    function handleSubmit(event) {
+      event.preventDefault();
+      onLogin();
+    }
 
 
   return (
     <div className={style.section}>
       <div className={style.auth_form_container}>
-        <h2 className={style.auth_form_title}>AllyArm</h2>
-        <form className={style.login_form}>
+        <h2 className={style.auth_form_title}>
+          Ally<span className={style.logo_title_color}>Arm</span>
+        </h2>
+        <form className={style.login_form} onSubmit={handleSubmit}>
           <label className={style.login_label} htmlFor="email">
             Login
             <input

@@ -1,0 +1,33 @@
+.patient_form_section {
+  width: 100%;
+  height: 100vh;
+}
+.patient_form{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.patient_form_list {
+  display: flex;
+  /* justify-content: start; */
+  flex-direction: column;
+}
+
+.patient_form_label {
+  text-align: left;
+  padding: 4px 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  margin: 0 20px;
+}
+
+.patient_form_input {
+  margin: 8px 30px;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+}

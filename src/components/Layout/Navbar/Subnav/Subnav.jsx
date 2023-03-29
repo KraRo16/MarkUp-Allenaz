@@ -6,7 +6,7 @@ export const Subnav = () => {
     <nav className={style.subnavigation}>
       <ul className={style.sub_list}>
         <li className={style.sub_item}>
-          <a className={style.sub_item_link} href="/">Initialization</a>
+          <a className={style.sub_item_link} href="/">Error/Warning</a>
         </li>
         <li className={style.sub_item}>
           <a className={style.sub_item_link} href="/">Exercises</a>
