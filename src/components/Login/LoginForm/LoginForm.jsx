@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import style from '../Login.module.css'
+import { Link } from 'react-router-dom';
 
 export const LoginForm = ({onLogin}) => {
     const [email, setEmail] = useState('');
@@ -42,9 +43,14 @@ export const LoginForm = ({onLogin}) => {
               placeholder="************"
             />
           </label>
-          <button className={style.login_btn} type="submit">
-            Login
-          </button>
+          <Link
+            style={{ color: 'inherit', textDecoration: 'inherit' }}
+            to="/home"
+          >
+            <button className={style.login_btn} type="submit">
+              Login
+            </button>
+          </Link>
         </form>
         {/* <button className={style.login_btn_link}>
           Don't have an account? Register here

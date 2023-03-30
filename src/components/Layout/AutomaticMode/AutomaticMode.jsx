@@ -20,23 +20,25 @@ export const AutomaticMode = () => {
 
 
     return (
-      <section className={style.mode_section}>
+      <div className={style.mode_section}>
         <Navbar />
-        <div className={style.mode_blur}>
-          <p>HELLo</p>
-          <div className={style.mode_btn_container}>
-            {mode.map(item => (
-              <button
-                className={style.mode_btn}
-                key={item.id_button}
-                onClick={() => handleClick(item.id_button)}
-              >
-                {item.description_button}
-              </button>
-            ))}
+          <div className={style.mode_blur}>
+            <div className={style.mode_btn_container}>
+              {mode.map(item => (
+                <button
+                  className={style.mode_btn}
+                  key={item.id_button}
+                  onClick={() => handleClick(item.id_button)}
+                >
+                  {item.description_button}
+                </button>
+              ))}
+            </div>
+            <button type="" className={style.mode_btn_stop}>
+              STOP
+            </button>
           </div>
-        </div>
-      </section>
+      </div>
     );
 
 }

@@ -1,7 +1,7 @@
 
 [{
 "id_button": 1,
-"description_button": "Ciclo Test 1"
+"description_button": "Test Cycle 1"
 },
 {
 "id_button": 2,
@@ -9,15 +9,15 @@
 },
 {
 "id_button": 3,
-"description_button": "Test cinematica inversa"
+"description_button": "Inverse kinematics test"
 },
 {
 "id_button": 4,
-"description_button": "Controllo posizioni"
+"description_button": "Position control"
 },
 {
 "id_button": 5,
-"description_button": "Ciclo Test 2"
+"description_button": "Test Cycle 2"
 },
 {
 "id_button": 6,
@@ -29,5 +29,5 @@
 },
 {
 "id_button": 8,
-"description_button": "Test Mouse Cartesiano"
+"description_button": "Cartesian Mouse Test"
 }]

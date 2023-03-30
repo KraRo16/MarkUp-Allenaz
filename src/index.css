@@ -14,13 +14,13 @@ code {
     monospace;
 }
 
-html,
-body {
+html {
   height: 100%;
+    margin: 0px;
 }
 
-body {
-  margin: 0px;
+body{
+  min-height: 100%;
 }
 
 

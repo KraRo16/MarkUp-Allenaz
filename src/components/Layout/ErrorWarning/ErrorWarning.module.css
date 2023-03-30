@@ -1,0 +1,96 @@
+.error_warning_section {
+  height: 100vh;
+}
+.error_warning_blur {
+  background-color: rgba(46, 45, 46, 50%);
+  margin: 100px;
+  height: 600px;
+  border-radius: 15px;
+}
+.error_warning_container {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+.error_warning_history {
+  background-color: rgba(34, 33, 34, 0.5);
+  border-radius: 15px;
+  padding: 15px;
+  height: 500px;
+}
+
+.error_warning_description {
+  background-color: rgba(34, 33, 34, 0.5);
+  border-radius: 15px;
+  padding: 15px;
+  width: 350px;
+  height: 200px;
+}
+.error_warning_description_item {
+  background-color: rgba(34, 33, 34, 0.5);
+  border-radius: 15px;
+  padding: 15px;
+  width: 150px;
+  height: 250px;
+}
+.error_warning_description_list {
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .error_warning_blur {
+    background-color: rgba(46, 45, 46, 50%);
+    margin: 20px;
+    height: 600px;
+    border-radius: 15px;
+  }
+  .error_warning_history {
+    padding-top: 20px;
+  }
+
+  .error_warning_table_head_item,
+  .error_warning_table_body_item {
+    padding: 5px;
+  }
+
+  .error_warning_description {
+    padding-top: 20px;
+            overflow: auto;
+
+  }
+
+  .error_warning_description_item {
+    width: 150px;
+    height: 250px;
+    margin-top: 20px;
+        overflow: auto;
+
+  }
+  .error_warning_description_item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .error_warning_description_text {
+
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .error_warning_section {
+    min-width: 100%;
+  }
+  .error_warning_blur {
+    margin: 100px;
+    height: 600px;
+  }
+  .error_warning_description {
+    padding-top: 20px;
+    width: 550px;
+  }
+
+  .error_warning_description_item {
+    width: 250px;
+    height: 250px;
+    margin-top: 20px;
+  }
+}

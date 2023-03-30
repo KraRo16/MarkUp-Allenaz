@@ -1,21 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import { LoginForm } from './Login/LoginForm/LoginForm';
 import { AutomaticMode } from './Layout/AutomaticMode/AutomaticMode';
-// import { Home } from './Layout/Home/Home';
-// import { PatientForm } from './Layout/PatientForm/PatientForm';
+import { ErrorWarning } from './Layout/ErrorWarning/ErrorWarning';
 import style from './App.module.css';
 
 export const App = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-
-  function handleLogin() {
-    setIsLoggedIn(true);
-  }
-
   return (
     <div className={style.App}>
-      {isLoggedIn ? <AutomaticMode /> : <LoginForm onLogin={handleLogin} />}
-      {/* <PatientForm /> */}
+      <Routes>
+        <Route path="/" element={<LoginForm />} />
+        <Route path="/home" element={<AutomaticMode />} />
+        <Route path="/errorwarning" element={<ErrorWarning />} />
+      </Routes>
     </div>
   );
 };
