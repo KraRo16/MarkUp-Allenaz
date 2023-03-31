@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/MarkUp-Allenaz/static/css/main.8d8593cb.css",
-    "main.js": "/MarkUp-Allenaz/static/js/main.cb4c609a.js",
+    "main.css": "/MarkUp-Allenaz/static/css/main.ea887a57.css",
+    "main.js": "/MarkUp-Allenaz/static/js/main.b2bc165a.js",
     "index.html": "/MarkUp-Allenaz/index.html",
-    "main.8d8593cb.css.map": "/MarkUp-Allenaz/static/css/main.8d8593cb.css.map",
-    "main.cb4c609a.js.map": "/MarkUp-Allenaz/static/js/main.cb4c609a.js.map"
+    "main.ea887a57.css.map": "/MarkUp-Allenaz/static/css/main.ea887a57.css.map",
+    "main.b2bc165a.js.map": "/MarkUp-Allenaz/static/js/main.b2bc165a.js.map"
   },
   "entrypoints": [
-    "static/css/main.8d8593cb.css",
-    "static/js/main.cb4c609a.js"
+    "static/css/main.ea887a57.css",
+    "static/js/main.b2bc165a.js"
   ]
 }
