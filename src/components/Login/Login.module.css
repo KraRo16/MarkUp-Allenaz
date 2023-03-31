@@ -85,3 +85,14 @@
 .logo_title_color{
 color: rgb(0, 165, 255);
 }
+
+@media screen and (max-width: 768px) {
+    .auth_form_container {
+        padding: 15px;
+      }
+.login_btn {
+  width: 100px;
+  margin-top: 10px;
+  padding: 10px;
+}
+}

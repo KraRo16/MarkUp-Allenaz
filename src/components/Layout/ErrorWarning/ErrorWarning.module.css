@@ -1,6 +1,4 @@
-.error_warning_section {
-  height: 100vh;
-}
+
 .error_warning_blur {
   background-color: rgba(46, 45, 46, 50%);
   margin: 100px;
@@ -12,11 +10,18 @@
   justify-content: space-around;
   padding-top: 10px;
 }
+.error_warning_title{
+    font-family: 'Roboto', sans-serif;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      padding-top: 10px;
+}
 .error_warning_history {
   background-color: rgba(34, 33, 34, 0.5);
   border-radius: 15px;
   padding: 15px;
   height: 500px;
+  overflow: auto;
 }
 
 .error_warning_description {
@@ -25,6 +30,7 @@
   padding: 15px;
   width: 350px;
   height: 200px;
+  overflow: auto;
 }
 .error_warning_description_item {
   background-color: rgba(34, 33, 34, 0.5);
@@ -32,9 +38,42 @@
   padding: 15px;
   width: 150px;
   height: 250px;
+  overflow: auto;
 }
 .error_warning_description_list {
   display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .error_warning_blur {
+    margin: 10px;
+    height: 700px;
+  }
+  .error_warning_container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .error_warning_history {
+    height: 150px;
+    margin: 10px;
+  }
+
+  .error_warning_description {
+    width: auto;
+    height: 150px;
+    margin: 10px;
+  }
+
+  .error_warning_description_item {
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+  }
+  .error_warning_description_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 }
 
 @media screen and (min-width: 768px) {
@@ -46,6 +85,7 @@
   }
   .error_warning_history {
     padding-top: 20px;
+    width: 280px;
   }
 
   .error_warning_table_head_item,
@@ -55,29 +95,22 @@
 
   .error_warning_description {
     padding-top: 20px;
-            overflow: auto;
-
   }
 
   .error_warning_description_item {
     width: 150px;
     height: 250px;
     margin-top: 20px;
-        overflow: auto;
-
   }
   .error_warning_description_item:not(:last-child) {
     margin-right: 20px;
-  }
-
-  .error_warning_description_text {
-
   }
 }
 
 @media screen and (min-width: 1200px) {
   .error_warning_section {
     min-width: 100%;
+    height: 100vh;
   }
   .error_warning_blur {
     margin: 100px;

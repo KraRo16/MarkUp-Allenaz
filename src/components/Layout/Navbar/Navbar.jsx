@@ -2,15 +2,10 @@ import React from 'react';
 import style from './Navbar.module.css';
 import { MdLogout } from 'react-icons/md';
 import { Link } from 'react-router-dom';
-// import { BsCaretDownFill, BsCaretUpFill } from 'react-icons/bs';
-// import { Subnav } from './Subnav/Subnav';
+import { Sidebar } from './Sidebar/Sidebar';
 
 export const Navbar = () => {
-  // const [showMenu, setShowMenu] = useState('');
 
-  // function handleMenuClick() {
-  //   setShowMenu(!showMenu);
-  // }
 
   return (
     <div className={style.navigation}>
@@ -66,11 +61,10 @@ export const Navbar = () => {
             <MdLogout size={24} />
           </button>
         </Link>
+        <div className={style.sidebar}>
+          <Sidebar />
+        </div>
       </header>
-      {/* <button className={style.header_subnav_btn}> */}
-      {/* {showMenu ? <BsCaretUpFill size={18} /> : <BsCaretDownFill size={18} />} */}
-      {/* </button> */}
-      {/* {showMenu && <Subnav />} */}
     </div>
   );
 };

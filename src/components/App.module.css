@@ -8,3 +8,8 @@ align-items: center;
 color: white;
     background-image: linear-gradient(79deg, #08040e, #615f61 48%, #e6dfda);
 }
+@media screen and (max-width: 767px) {
+    .App{
+        display: block;
+    }
+}

@@ -8,7 +8,7 @@ export const ErrorWarning = () => {
     <div className={style.error_warning_section}>
       <Navbar />
       <div className={style.error_warning_blur}>
-        <h2>Error and Warning</h2>
+        <h2 className={style.error_warning_title}>Error and Warning</h2>
         <div className={style.error_warning_container}>
           <div className={style.error_warning_history}>
             <h3>Error history</h3>
