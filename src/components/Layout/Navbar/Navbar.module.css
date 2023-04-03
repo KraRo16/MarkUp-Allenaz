@@ -1,4 +1,3 @@
-
 .header_navbar {
   display: flex;
   justify-content: space-around;
@@ -6,8 +5,6 @@
   height: 80px;
   background-color: #2e2d2e;
 }
-
-
 
 .header_title {
   font-family: 'Cinzel', serif;
@@ -155,16 +152,18 @@
       font-size: 10px;
       letter-spacing: 0.04em;
     } */
-
 }
 
 @media screen and (min-width: 768px) {
   .header_navbar {
     width: 768px;
   }
-.sidebar{
-  display: none;
-}
+  .sidebar {
+    display: none;
+  }
+  .header_form {
+    display: none;
+  }
   .header_title {
     font-size: 18px;
     padding-right: 10px;
@@ -179,7 +178,7 @@
     padding-right: 0px;
   }
 
-  .header_search_input {
+  /* .header_search_input {
     margin: 4px 0;
     padding: 4px;
     width: 100px;
@@ -190,16 +189,11 @@
     font-weight: 500;
     font-size: 12px;
     letter-spacing: 0.04em;
-  }
+  } */
 
   .header_user_info {
     flex-wrap: wrap;
     padding-right: 0;
-  }
-
-  .header_form {
-    margin-right: 10px;
-    display: block;
   }
 
   .header_user_position {
@@ -230,7 +224,11 @@
   }
   .header_search_input {
     padding: 10px;
-    width: 150px;
+    width: 200px;
+  }
+  .header_form {
+    margin-right: 10px;
+    display: block;
   }
 
   .header_search_btn {

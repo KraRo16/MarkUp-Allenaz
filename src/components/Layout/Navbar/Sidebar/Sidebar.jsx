@@ -13,15 +13,18 @@ export const Sidebar = () => {
       {open && (
         <div className={style.burger_menu}>
           <Link to="/home" className={style.burger_menu_item}>
-            Auto Mode
+            Home
+          </Link>
+          <Link to="/wearing" className={style.burger_menu_item}>
+            Wearing
           </Link>
           <Link to="/errorwarning" className={style.burger_menu_item}>
             Error/Warning
           </Link>
-          <Link to="/" className={style.burger_menu_item}>
-            Exercises
+          <Link to="/testing" className={style.burger_menu_item}>
+            Test
           </Link>
-          <Link to="/" className={style.burger_menu_item}>
+          <Link to="/setting" className={style.burger_menu_item}>
             Setting
           </Link>
           <Link to="/diagnostics" className={style.burger_menu_item}>

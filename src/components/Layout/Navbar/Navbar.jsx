@@ -21,14 +21,19 @@ export const Navbar = () => {
         <nav className={style.subnavigation}>
           <ul className={style.sub_list}>
             <li className={style.sub_item}>
+              <Link to="/wearing" className={style.sub_item_link}>
+                Wearing
+              </Link>
+            </li>
+            <li className={style.sub_item}>
               <Link to="/errorwarning" className={style.sub_item_link}>
                 Error/Warning
               </Link>
             </li>
             <li className={style.sub_item}>
-              <a className={style.sub_item_link} href="/">
-                Exercises
-              </a>
+              <Link to="/testing" className={style.sub_item_link}>
+                Test
+              </Link>
             </li>
             <li className={style.sub_item}>
               <a className={style.sub_item_link} href="/">
@@ -36,7 +41,7 @@ export const Navbar = () => {
               </a>
             </li>
             <li className={style.sub_item}>
-              <Link to="/diagnostics"className={style.sub_item_link}>
+              <Link to="/diagnostics" className={style.sub_item_link}>
                 Diagnostics
               </Link>
             </li>
