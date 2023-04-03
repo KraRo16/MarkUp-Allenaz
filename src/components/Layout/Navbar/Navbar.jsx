@@ -36,9 +36,9 @@ export const Navbar = () => {
               </a>
             </li>
             <li className={style.sub_item}>
-              <a className={style.sub_item_link} href="/">
+              <Link to="/diagnostics"className={style.sub_item_link}>
                 Diagnostics
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

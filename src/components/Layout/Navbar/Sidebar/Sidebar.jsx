@@ -24,7 +24,7 @@ export const Sidebar = () => {
           <Link to="/" className={style.burger_menu_item}>
             Setting
           </Link>
-          <Link to="/" className={style.burger_menu_item}>
+          <Link to="/diagnostics" className={style.burger_menu_item}>
             Diagnostics
           </Link>
           <div className={style.burger_user_info}>
