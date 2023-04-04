@@ -6,6 +6,8 @@ import { AutomaticMode } from './Layout/AutomaticMode/AutomaticMode';
 import { ErrorWarning } from './Layout/ErrorWarning/ErrorWarning';
 import { Diagnostics } from './Layout/Diagnostics/Diagnostics';
 import { Wearing } from './Layout/Wearing/Wearing';
+import { SettingMenu } from './Layout/Setting/SettingMenu/SettingMenu';
+import { AxisSpeed } from './Layout/Setting/AxisSpeed/AxisSpeed';
 import style from './App.module.css';
 
 export const App = () => {
@@ -17,6 +19,8 @@ export const App = () => {
         <Route path="/wearing" element={<Wearing />} />
         <Route path="/testing" element={<AutomaticMode />} />
         <Route path="/errorwarning" element={<ErrorWarning />} />
+        <Route path="/setting" element={<SettingMenu />} />
+        <Route path="/axisspeed" element={<AxisSpeed />} />
         <Route path="/diagnostics" element={<Diagnostics />} />
       </Routes>
     </div>

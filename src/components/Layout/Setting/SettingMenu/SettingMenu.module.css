@@ -1,0 +1,47 @@
+.setting_menu_section {
+    width: 100%;
+}
+
+.setting_menu_blur {
+    background-color: rgba(46, 45, 46, 50%);
+    margin: 10px;
+    height: 600px;
+    border-radius: 15px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.setting_menu_btn_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.setting_menu_btn {
+    border: none;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 150px;
+    height: 170px;
+    margin: 10px 8px;
+}
+
+.setting_menu_btn:hover,
+.setting_menu_btn:focus {
+    color: white;
+    background-color: rgb(0, 165, 255);
+    outline: none;
+    box-shadow: 0px 0px 10px rgb(32, 177, 255);
+}

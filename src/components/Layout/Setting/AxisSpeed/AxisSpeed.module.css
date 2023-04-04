@@ -1,0 +1,15 @@
+.axis_speed_section {
+    width: 100%;
+}
+
+.axis_speed_blur {
+    background-color: rgba(46, 45, 46, 50%);
+    margin: 10px;
+    height: 600px;
+    border-radius: 15px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
