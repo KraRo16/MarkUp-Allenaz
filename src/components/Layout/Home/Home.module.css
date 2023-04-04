@@ -1,3 +1,7 @@
+.home_section{
+  width: 100%;
+}
+
 .home_blur {
   background-color: rgba(46, 45, 46, 50%);
   margin: 10px;

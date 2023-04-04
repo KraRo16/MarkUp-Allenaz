@@ -1,3 +1,7 @@
+.wearing_section {
+    width: 100%;
+}
+
 .wearing_blur {
   background-color: rgba(46, 45, 46, 50%);
   margin: 10px;
