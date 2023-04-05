@@ -1,0 +1,100 @@
+.axis_speed_section {
+    width: 100%;
+}
+
+.axis_speed_blur {
+    background-color: rgba(46, 45, 46, 50%);
+    margin: 10px;
+    height: 600px;
+    border-radius: 15px;
+    margin-top: 30px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.axis_speed_title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    padding-top: 20px;
+}
+
+.axis_slider {
+    width: 80%;
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.axis_slider_title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
+.axis_slider_value {
+    padding-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
+.axis_slider_btn_container {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.axis_slider_btn_save {
+    border: none;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 150px;
+    height: 100px;
+    margin: 10px 8px;
+}
+
+.axis_slider_btn_save:hover,
+.axis_slider_btn_save:focus {
+    color: white;
+    background-color: green;
+    outline: none;
+    box-shadow: 0px 0px 10px #00ff00;
+}
+
+.axis_slider_btn_default {
+    border: none;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 150px;
+    height: 100px;
+    margin: 10px 8px;
+}
+
+.axis_slider_btn_default:hover,
+.axis_slider_btn_default:focus {
+    color: white;
+    background-color: gold;
+    outline: none;
+    box-shadow: 0px 0px 10px goldenrod;
+}

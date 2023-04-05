@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import style from './AxisSpeed.module.css';
+import style from './JoystickSensitivity.module.css';
 import { Navbar } from 'components/Layout/Navbar/Navbar';
 import Slider from '@mui/material/Slider';
 
-export const AxisSpeed = () => {
+export const JoystickSensitivity = () => {
   const [axisValue1, setAxisValue1] = useState(0);
   const [axisValue2, setAxisValue2] = useState(0);
   const [axisValue3, setAxisValue3] = useState(0);
@@ -26,9 +26,9 @@ export const AxisSpeed = () => {
     <div className={style.axis_speed_section}>
       <Navbar />
       <div className={style.axis_speed_blur}>
-        <h2 className={style.axis_speed_title}>Axis Speed</h2>
+        <h2 className={style.axis_speed_title}>Joystick Sensitivity</h2>
         <div className={style.axis_slider}>
-          <h3 className={style.axis_slider_title}>Axis 1</h3>
+          <h3 className={style.axis_slider_title}>Axis X</h3>
           <p className={style.axis_slider_value}>{axisValue1}</p>
           <Slider
             className={style.axis_slider_item}
@@ -40,7 +40,7 @@ export const AxisSpeed = () => {
           />
         </div>
         <div className={style.axis_slider}>
-          <h3 className={style.axis_slider_title}>Axis 2</h3>
+          <h3 className={style.axis_slider_title}>Axis Y</h3>
           <p className={style.axis_slider_value}>{axisValue2}</p>
           <Slider
             className={style.axis_slider_item}
@@ -52,7 +52,7 @@ export const AxisSpeed = () => {
           />
         </div>
         <div className={style.axis_slider}>
-          <h3 className={style.axis_slider_title}>Axis 3</h3>
+          <h3 className={style.axis_slider_title}>Axis Z</h3>
           <p className={style.axis_slider_value}>{axisValue3}</p>
           <Slider
             className={style.axis_slider_item}
@@ -64,7 +64,7 @@ export const AxisSpeed = () => {
           />
         </div>
         <div className={style.axis_slider}>
-          <h3 className={style.axis_slider_title}>Axis 4</h3>
+          <h3 className={style.axis_slider_title}>Axis C</h3>
           <p className={style.axis_slider_value}>{axisValue4}</p>
           <Slider
             className={style.axis_slider_item}

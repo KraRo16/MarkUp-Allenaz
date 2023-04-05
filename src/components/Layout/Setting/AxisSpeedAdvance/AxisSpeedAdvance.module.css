@@ -23,7 +23,7 @@
 
 .axis_slider {
   width: 80%;
-  padding-top: 30px;
+  padding-top: 26px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -35,6 +35,13 @@
   font-weight: 600;
   letter-spacing: 0.08em;
 }
+.axis_speed_subtitle {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  color: rgb(0, 165, 255);
+  padding-top: 10px;
+}
 
 .axis_slider_value {
   padding-left: 20px;
@@ -44,7 +51,7 @@
 }
 
 .axis_slider_btn_container {
-  padding-top: 30px;
+  padding-top: 20px;
   display: flex;
   justify-content: space-around;
 }

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import style from './AxisSpeed.module.css';
+import style from './AxisSpeedAdvance.module.css';
 import { Navbar } from 'components/Layout/Navbar/Navbar';
 import Slider from '@mui/material/Slider';
 
-export const AxisSpeed = () => {
+export const AxisSpeedAdvance = () => {
   const [axisValue1, setAxisValue1] = useState(0);
   const [axisValue2, setAxisValue2] = useState(0);
   const [axisValue3, setAxisValue3] = useState(0);
@@ -27,6 +27,7 @@ export const AxisSpeed = () => {
       <Navbar />
       <div className={style.axis_speed_blur}>
         <h2 className={style.axis_speed_title}>Axis Speed</h2>
+        <h3 className={style.axis_speed_subtitle}>ADVANCE</h3>
         <div className={style.axis_slider}>
           <h3 className={style.axis_slider_title}>Axis 1</h3>
           <p className={style.axis_slider_value}>{axisValue1}</p>

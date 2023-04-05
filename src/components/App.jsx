@@ -8,6 +8,10 @@ import { Diagnostics } from './Layout/Diagnostics/Diagnostics';
 import { Wearing } from './Layout/Wearing/Wearing';
 import { SettingMenu } from './Layout/Setting/SettingMenu/SettingMenu';
 import { AxisSpeed } from './Layout/Setting/AxisSpeed/AxisSpeed';
+import { AxisSpeedAdvance } from './Layout/Setting/AxisSpeedAdvance/AxisSpeedAdvance';
+import { JoystickSensitivity } from './Layout/Setting/JoystickSensitivity/JoystickSensitivity';
+import { WearingPosition } from './Layout/Setting/WearingPosition/WearingPosition';
+import { DefaultFunctions } from './Layout/Setting/DefaultFunction/DefaultFunctions';
 import style from './App.module.css';
 
 export const App = () => {
@@ -21,6 +25,10 @@ export const App = () => {
         <Route path="/errorwarning" element={<ErrorWarning />} />
         <Route path="/setting" element={<SettingMenu />} />
         <Route path="/axisspeed" element={<AxisSpeed />} />
+        <Route path="/axisspeed_advance" element={<AxisSpeedAdvance />} />
+        <Route path="/sensitivity" element={<JoystickSensitivity />} />
+        <Route path="/wearingposition" element={<WearingPosition />} />
+        <Route path="/default_function" element={<DefaultFunctions />} />
         <Route path="/diagnostics" element={<Diagnostics />} />
       </Routes>
     </div>

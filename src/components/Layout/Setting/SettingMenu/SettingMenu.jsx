@@ -13,9 +13,9 @@ export const SettingMenu = () => {
             <Link to="/rom">
               <button className={style.setting_menu_btn}>ROM</button>
             </Link>
-            <Link to="/axisspeed_advantage">
+            <Link to="/axisspeed_advance">
               <button className={style.setting_menu_btn}>
-                AXIS SPEED (ADVANTAGE)
+                AXIS SPEED (ADVANCE)
               </button>
             </Link>
             <Link to="/axisspeed">
