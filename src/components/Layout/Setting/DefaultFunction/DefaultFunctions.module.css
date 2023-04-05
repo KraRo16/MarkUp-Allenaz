@@ -13,3 +13,37 @@
     align-items: center;
     flex-direction: column;
   }
+
+  .default_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .default_form_row{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .default_form_input{
+    width: 40px;
+    height: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.default_form_rename_logo {
+    border-radius: 10px;
+    margin-left: 8px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: white;
+    text-decoration: underline;
+    transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .default_form_rename_logo:hover,
+  .default_form_rename_logo:focus {
+    color: red;
+  }

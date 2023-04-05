@@ -12,9 +12,8 @@ export const Wearing = () => {
 
           <button className={style.wearing_btn}>DRESSED</button>
 
-          <button className={style.wearing_btn}>REST POSITION</button>
-
           <button className={style.wearing_btn}>FREE POSITION</button>
+          <button className={style.wearing_btn}>UNDRESSED</button>
         </div>
       </div>
     </div>
