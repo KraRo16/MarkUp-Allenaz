@@ -23,15 +23,15 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     letter-spacing: 0.08em;
-    padding-top: 20px;
+    /* margin-top: 10px; */
 }
 
-.wearing_form{
+.wearing_list{
     display: flex;
     flex-direction: column;
 }
 
-.wearing_form_row{
+.wearing_list_row{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,21 +39,19 @@
     margin-top: 10px;
 }
 
-.wearing_form_label{
+.wearing_list_item{
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 0.1em;
 }
 
-.wearing_form_input{
-    width: 40px;
-    height: 20px;
-    font-size: 24px;
+.wearing_list_value{
+    font-size: 20px;
     text-align: center;
 }
 
-.wearing_form_btn{
+.wearing_btn{
     border: none;
     background-color: white;
     padding: 5px;
@@ -70,8 +68,8 @@
     margin: 16px 8px 0 8px;
 }
 
-.wearing_form_btn:hover,
-.wearing_form_btn:focus {
+.wearing_btn:hover,
+.wearing_btn:focus {
   color: white;
   background-color: green;
   outline: none;

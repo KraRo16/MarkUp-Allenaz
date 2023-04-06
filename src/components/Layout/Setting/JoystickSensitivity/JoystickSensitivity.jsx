@@ -2,24 +2,55 @@ import React, { useState } from 'react';
 import style from './JoystickSensitivity.module.css';
 import { Navbar } from 'components/Layout/Navbar/Navbar';
 import Slider from '@mui/material/Slider';
+import { BsFillLockFill, BsFillUnlockFill } from 'react-icons/bs';
 
 export const JoystickSensitivity = () => {
   const [axisValue1, setAxisValue1] = useState(0);
   const [axisValue2, setAxisValue2] = useState(0);
   const [axisValue3, setAxisValue3] = useState(0);
   const [axisValue4, setAxisValue4] = useState(0);
+  const [isLocked, setIsLocked] = useState(false);
 
   const handleChangeAxis1 = (event, newValue) => {
     setAxisValue1(newValue);
+    if (isLocked) {
+      setAxisValue2(newValue);
+      setAxisValue3(newValue);
+      setAxisValue4(newValue);
+    }
   };
   const handleChangeAxis2 = (event, newValue) => {
     setAxisValue2(newValue);
+    if (isLocked) {
+      setAxisValue1(newValue);
+      setAxisValue3(newValue);
+      setAxisValue4(newValue);
+    }
   };
   const handleChangeAxis3 = (event, newValue) => {
     setAxisValue3(newValue);
+    if (isLocked) {
+      setAxisValue1(newValue);
+      setAxisValue2(newValue);
+      setAxisValue4(newValue);
+    }
   };
   const handleChangeAxis4 = (event, newValue) => {
     setAxisValue4(newValue);
+    if (isLocked) {
+      setAxisValue1(newValue);
+      setAxisValue2(newValue);
+      setAxisValue3(newValue);
+    }
+  };
+  const handleSync = () => {
+    setIsLocked(!isLocked);
+    if (!isLocked) {
+      // если кнопка только что была нажата, устанавливаем значения всех слайдеров равными первому
+      setAxisValue2(axisValue1);
+      setAxisValue3(axisValue1);
+      setAxisValue4(axisValue1);
+    }
   };
 
   return (
@@ -27,6 +58,14 @@ export const JoystickSensitivity = () => {
       <Navbar />
       <div className={style.axis_speed_blur}>
         <h2 className={style.axis_speed_title}>Joystick Sensitivity</h2>
+        <button className={style.axis_slider_locker_btn} onClick={handleSync}>
+          {isLocked ? (
+            <BsFillLockFill size={26} color="red" />
+          ) : (
+            <BsFillUnlockFill size={26} color="green" />
+          )}
+          {/* изменяем текст на кнопке в зависимости от состояния */}
+        </button>
         <div className={style.axis_slider}>
           <h3 className={style.axis_slider_title}>Axis X</h3>
           <p className={style.axis_slider_value}>{axisValue1}</p>

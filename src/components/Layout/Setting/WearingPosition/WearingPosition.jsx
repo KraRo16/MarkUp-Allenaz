@@ -9,87 +9,63 @@ export const WearingPosition = () => {
       <div className={style.wearing_blur}>
         <div className={style.wearing_container}>
           <h2 className={style.wearing_title}>Wearing Position</h2>
-          <form className={style.wearing_form}>
-            <div className={style.wearing_form_row}>
-              <label
-                className={style.wearing_form_label}
-                htmlFor="wearingPositionAxis"
-              >
-                Axis 1
-              </label>
-              <input className={style.wearing_form_input} type="number" />
-            </div>
-            <div className={style.wearing_form_row}>
-              <label
-                className={style.wearing_form_label}
-                htmlFor="wearingPositionAxis"
-              >
-                Axis 2
-              </label>
-              <input className={style.wearing_form_input} type="number" />
-            </div>
-            <div className={style.wearing_form_row}>
-              <label
-                className={style.wearing_form_label}
-                htmlFor="wearingPositionAxis"
-              >
-                Axis 3
-              </label>
-              <input className={style.wearing_form_input} type="number" />
-            </div>
-            <div className={style.wearing_form_row}>
-              <label
-                className={style.wearing_form_label}
-                htmlFor="wearingPositionAxis"
-              >
-                Axis 4
-              </label>
-              <input className={style.wearing_form_input} type="number" />
-            </div>
-          </form>
-          <button className={style.wearing_form_btn}>SAVE</button>
+          <ul className={style.wearing_list}>
+            <li className={style.wearing_list_row}>
+              <p className={style.wearing_list_item}>Axis 1</p>
+              <span className={style.wearing_list_value} type="number">
+                20
+              </span>
+            </li>
+            <li className={style.wearing_list_row}>
+              <p className={style.wearing_list_item}>Axis 2</p>
+              <span className={style.wearing_list_value} type="number">
+                20
+              </span>
+            </li>
+            <li className={style.wearing_list_row}>
+              <p className={style.wearing_list_item}>Axis 3</p>
+              <span className={style.wearing_list_value} type="number">
+                20
+              </span>
+            </li>
+            <li className={style.wearing_list_row}>
+              <p className={style.wearing_list_item}>Axis 4</p>
+              <span className={style.wearing_list_value} type="number">
+                20
+              </span>
+            </li>
+          </ul>
+          <button className={style.wearing_btn}>SAVE</button>
         </div>
         <div className={style.wearing_container}>
           <h2 className={style.wearing_title}>Rest Position</h2>
-          <form className={style.wearing_form}>
-            <div className={style.wearing_form_row}>
-              <label
-                className={style.wearing_form_label}
-                htmlFor="wearingPositionAxis"
-              >
-                Axis 1
-              </label>
-              <input className={style.wearing_form_input} type="number" />
-            </div>
-            <div className={style.wearing_form_row}>
-              <label
-                className={style.wearing_form_label}
-                htmlFor="wearingPositionAxis"
-              >
-                Axis 2
-              </label>
-              <input className={style.wearing_form_input} type="number" />
-            </div>
-            <div className={style.wearing_form_row}>
-              <label
-                className={style.wearing_form_label}
-                htmlFor="wearingPositionAxis"
-              >
-                Axis 3
-              </label>
-              <input className={style.wearing_form_input} type="number" />
-            </div>
-            <div className={style.wearing_form_row}>
-              <label
-                className={style.wearing_form_label}
-                htmlFor="wearingPositionAxis"
-              >
-                Axis 4
-              </label>
-              <input className={style.wearing_form_input} type="number" />
-            </div>
-          </form>
-          <button className={style.wearing_form_btn}>SAVE</button>
+          <ul className={style.wearing_list}>
+            <li className={style.wearing_list_row}>
+              <p className={style.wearing_list_item}>Axis 1</p>
+              <span className={style.wearing_list_value} type="number">
+                20
+              </span>
+            </li>
+            <li className={style.wearing_list_row}>
+              <p className={style.wearing_list_item}>Axis 2</p>
+              <span className={style.wearing_list_value} type="number">
+                20
+              </span>
+            </li>
+            <li className={style.wearing_list_row}>
+              <p className={style.wearing_list_item}>Axis 3</p>
+              <span className={style.wearing_list_value} type="number">
+                20
+              </span>
+            </li>
+            <li className={style.wearing_list_row}>
+              <p className={style.wearing_list_item}>Axis 4</p>
+              <span className={style.wearing_list_value} type="number">
+                20
+              </span>
+            </li>
+          </ul>
+          <button className={style.wearing_btn}>SAVE</button>
         </div>
       </div>
     </div>

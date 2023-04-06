@@ -23,7 +23,7 @@
 
 .axis_slider {
   width: 80%;
-  padding-top: 26px;
+  padding-top: 16px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -104,4 +104,12 @@
   background-color: gold;
   outline: none;
   box-shadow: 0px 0px 10px goldenrod;
+}
+
+.axis_slider_locker_btn{
+  margin-top: 16px;
+  border: none;
+  cursor: pointer;
+  background: none;
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
