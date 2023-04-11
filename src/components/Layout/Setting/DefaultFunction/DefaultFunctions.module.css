@@ -1,49 +1,129 @@
-.defaul_tsection {
-    width: 100%;
-  }
-  
-  .default_blur {
-    background-color: rgba(46, 45, 46, 50%);
-    margin: 10px;
-    height: 600px;
-    border-radius: 15px;
-    margin-top: 30px;
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .default_form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .default_form_row{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .default_form_input{
-    width: 40px;
-    height: 20px;
-    font-size: 24px;
-    text-align: center;
+.defaul_section {
+  width: 100%;
 }
 
-.default_form_rename_logo {
-    border-radius: 10px;
-    margin-left: 8px;
-    border: none;
-    cursor: pointer;
-    background: none;
-    color: white;
-    text-decoration: underline;
-    transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .default_form_rename_logo:hover,
-  .default_form_rename_logo:focus {
-    color: red;
-  }
+.default_blur {
+  background-color: rgba(46, 45, 46, 50%);
+  margin: 10px;
+  height: 600px;
+  border-radius: 15px;
+  margin-top: 30px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+}
+
+.default_title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  padding-top: 20px;
+}
+
+.default_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.default_list_item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  padding: 8px;
+  background-color: rgba(46, 45, 46, 50%);
+  border-radius: 6px;
+}
+.default_list_item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.default_list_text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.default_list_value {
+  /* width: 40px;
+  height: 20px; */
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.default_btn_container {
+  margin-top: 10px;
+}
+
+.default_form_rename {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.default_btn_input {
+  width: 150px;
+  height: 24px;
+  padding-left: 8px;
+  border: none;
+  border-radius: 10px;
+}
+
+.default_form_btn {
+  border: none;
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 180px;
+  height: 54px;
+  margin: 10px 8px;
+}
+
+.default_form_btn:hover,
+.default_form_btn:focus {
+  color: white;
+  background-color: green;
+  outline: none;
+  box-shadow: 0px 0px 10px #00ff00;
+}
+.default_btn_rename {
+  border-radius: 10px;
+  margin-left: 26px;
+  border: none;
+  cursor: pointer;
+  background: none;
+  color: white;
+  text-decoration: underline;
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.default_btn_rename:hover,
+.default_btn_rename:focus {
+  color: red;
+}
+
+.default_btn_save {
+  border-radius: 10px;
+  margin-left: 26px;
+  border: none;
+  cursor: pointer;
+  background: none;
+  color: white;
+  text-decoration: underline;
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.default_btn_save:hover,
+.default_btn_save:focus {
+  color: green;
+}
