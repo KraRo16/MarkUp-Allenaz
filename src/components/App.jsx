@@ -12,6 +12,7 @@ import { AxisSpeedAdvance } from './Layout/Setting/AxisSpeedAdvance/AxisSpeedAdv
 import { JoystickSensitivity } from './Layout/Setting/JoystickSensitivity/JoystickSensitivity';
 import { WearingPosition } from './Layout/Setting/WearingPosition/WearingPosition';
 import { DefaultFunctions } from './Layout/Setting/DefaultFunction/DefaultFunctions';
+import { Rom } from './Layout/Setting/ROM/Rom';
 import style from './App.module.css';
 
 export const App = () => {
@@ -29,7 +30,9 @@ export const App = () => {
         <Route path="/sensitivity" element={<JoystickSensitivity />} />
         <Route path="/wearingposition" element={<WearingPosition />} />
         <Route path="/default_function" element={<DefaultFunctions />} />
+        <Route path="/rom" element={<Rom />} />
         <Route path="/diagnostics" element={<Diagnostics />} />
+
       </Routes>
     </div>
   );
