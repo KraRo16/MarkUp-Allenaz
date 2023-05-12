@@ -1,4 +1,4 @@
-import {React, useState} from 'react';
+import React from 'react';
 import style from './Rom.module.css';
 import { Navbar } from 'components/Layout/Navbar/Navbar';
 import Slider from '@mui/material/Slider';
@@ -11,7 +11,7 @@ const rom = {
 
 export const Rom = () => {
 
-  const [axisValue1, setAxisValue1] = useState(0);
+  // const [axisValue1, setAxisValue1] = useState(0);
 
   return (
     <div className={style.rom_section}>
@@ -20,14 +20,13 @@ export const Rom = () => {
         <h2 className={style.rom_title}>ROM</h2>
           <div className={style.rom_container}>
             <div className={style.rom_value}>
-            <p className={style.rom_slider_value}>Min: {axisValue1}</p>
+            <p className={style.rom_slider_value}>Min: -50</p>
             <img className={style.rom_img} src={rom.axis1} alt="Axis 1" />
             <p className={style.rom_slider_value}>Max: 30</p>
             </div>
               <Slider
                 className={style.rom_slider}
                 defaultValue={[-50, 30]}
-                value={axisValue1}
                 getAriaLabel={() => 'Minimum distance'}
                 valueLabelDisplay="auto"
                 disableSwap
