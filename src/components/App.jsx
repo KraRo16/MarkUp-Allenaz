@@ -15,6 +15,20 @@ import { DefaultFunctions } from './Layout/Setting/DefaultFunction/DefaultFuncti
 import { Rom } from './Layout/Setting/ROM/Rom';
 import style from './App.module.css';
 
+// const LoginForm = lazy(() => import('./Login/LoginForm/LoginForm'));
+// const Home = lazy(() => import('./Layout/Home/Home'));
+// const AutomaticMode = lazy(() => import('./Layout/AutomaticMode/AutomaticMode'));
+// const ErrorWarning = lazy(() => import('./Layout/ErrorWarning/ErrorWarning'));
+// const Diagnostics = lazy(() => import('./Layout/Diagnostics/Diagnostics'));
+// const Wearing = lazy(() => import('./Layout/Wearing/Wearing'));
+// const SettingMenu = lazy(() => import('./Layout/Setting/SettingMenu/SettingMenu'));
+// const AxisSpeed = lazy(() => import('./Layout/Setting/AxisSpeed/AxisSpeed'));
+// const AxisSpeedAdvance = lazy(() => import('./Layout/Setting/AxisSpeedAdvance/AxisSpeedAdvance'));
+// const JoystickSensitivity = lazy(() => import('./Layout/Setting/JoystickSensitivity/JoystickSensitivity'));
+// const WearingPosition = lazy(() => import('./Layout/Setting/WearingPosition/WearingPosition'));
+// const DefaultFunctions = lazy(() => import('./Layout/Setting/DefaultFunction/DefaultFunctions'));
+// const Rom = lazy(() => import('./Layout/Setting/ROM/Rom'));
+
 export const App = () => {
   return (
     <div className={style.App}>
