@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/MarkUp-Allenaz/static/css/main.3013141a.css",
+    "main.css": "/MarkUp-Allenaz/static/css/main.dccbba9f.css",
     "main.js": "/MarkUp-Allenaz/static/js/main.4d71914f.js",
     "static/media/Asse 3.webp": "/MarkUp-Allenaz/static/media/Asse 3.dd58f2039dedbf67e5e7.webp",
     "static/media/Asse 2.webp": "/MarkUp-Allenaz/static/media/Asse 2.7f0eceec57b662a6579b.webp",
     "static/media/Asse 1.webp": "/MarkUp-Allenaz/static/media/Asse 1.2f39a0be4134aba77d4e.webp",
     "static/media/Asse 4.webp": "/MarkUp-Allenaz/static/media/Asse 4.f95a7bc39131ccf70fbf.webp",
     "index.html": "/MarkUp-Allenaz/index.html",
-    "main.3013141a.css.map": "/MarkUp-Allenaz/static/css/main.3013141a.css.map",
+    "main.dccbba9f.css.map": "/MarkUp-Allenaz/static/css/main.dccbba9f.css.map",
     "main.4d71914f.js.map": "/MarkUp-Allenaz/static/js/main.4d71914f.js.map"
   },
   "entrypoints": [
-    "static/css/main.3013141a.css",
+    "static/css/main.dccbba9f.css",
     "static/js/main.4d71914f.js"
   ]
 }
