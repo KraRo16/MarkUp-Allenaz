@@ -13,6 +13,7 @@ import { JoystickSensitivity } from './Layout/Setting/JoystickSensitivity/Joysti
 import { WearingPosition } from './Layout/Setting/WearingPosition/WearingPosition';
 import { DefaultFunctions } from './Layout/Setting/DefaultFunction/DefaultFunctions';
 import { Rom } from './Layout/Setting/ROM/Rom';
+import { PrivateRoute } from '../HOCs/PrivateRoute';
 import style from './App.module.css';
 
 export const App = () => {
@@ -20,7 +21,14 @@ export const App = () => {
     <div className={style.App}>
       <Routes>
         <Route path="/" element={<LoginForm />} />
-        <Route path="/home" element={<Home />} />
+        <Route
+          path="/home"
+          element={
+            <PrivateRoute>
+              <Home />
+            </PrivateRoute>
+          }
+        />
         <Route path="/wearing" element={<Wearing />} />
         <Route path="/testing" element={<AutomaticMode />} />
         <Route path="/errorwarning" element={<ErrorWarning />} />
@@ -32,7 +40,6 @@ export const App = () => {
         <Route path="/default_function" element={<DefaultFunctions />} />
         <Route path="/rom" element={<Rom />} />
         <Route path="/diagnostics" element={<Diagnostics />} />
-
       </Routes>
     </div>
   );

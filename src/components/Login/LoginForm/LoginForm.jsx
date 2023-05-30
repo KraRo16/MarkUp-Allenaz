@@ -1,16 +1,31 @@
-import React, {useState} from 'react';
-import style from '../Login.module.css'
+import React, { useState } from 'react';
+import style from '../Login.module.css';
 import { Link } from 'react-router-dom';
+import { fetchLogin } from 'auth/fetchLogin';
+import axios from 'axios';
 
-export const LoginForm = ({onLogin}) => {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+export const LoginForm = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [token, setToken] = useState('');
 
-    function handleSubmit(event) {
-      event.preventDefault();
-      onLogin();
+  async function handleSubmit(event) {
+    event.preventDefault();
+
+    try {
+      const response = await fetchLogin({ email, password });
+
+      if (response.status === 200) {
+        localStorage.setItem('token', response.data.token);
+        setToken(response.data.token);
+        console.log('Token:', response.data.token);
+      } else {
+        throw new Error('Error occurred during login');
+      }
+    } catch (error) {
+      console.error(error.message);
     }
-
+  }
 
   return (
     <div className={style.section}>
@@ -52,10 +67,7 @@ export const LoginForm = ({onLogin}) => {
             </button>
           </Link>
         </form>
-        {/* <button className={style.login_btn_link}>
-          Don't have an account? Register here
-        </button> */}
       </div>
     </div>
   );
-}
+};
