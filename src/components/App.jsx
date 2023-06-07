@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { LoginForm } from './Login/LoginForm/LoginForm';
 import { Home } from './Layout/Home/Home';
+import { LoginPage } from './Page/LoginPage';
 import { AutomaticMode } from './Layout/AutomaticMode/AutomaticMode';
 import { ErrorWarning } from './Layout/ErrorWarning/ErrorWarning';
 import { Diagnostics } from './Layout/Diagnostics/Diagnostics';
@@ -14,6 +14,7 @@ import { WearingPosition } from './Layout/Setting/WearingPosition/WearingPositio
 import { DefaultFunctions } from './Layout/Setting/DefaultFunction/DefaultFunctions';
 import { Rom } from './Layout/Setting/ROM/Rom';
 import { PrivateRoute } from '../HOCs/PrivateRoute';
+import { PublicRoute } from '../HOCs/PublicRoute';
 import style from './App.module.css';
 
 // const LoginForm = lazy(() => import('./Login/LoginForm/LoginForm'));
@@ -34,11 +35,18 @@ export const App = () => {
   return (
     <div className={style.App}>
       <Routes>
-        <Route path="/" element={<LoginForm />} />
+        <Route
+          path="/"
+          element={
+            <PublicRoute>
+              <LoginPage />
+            </PublicRoute>
+          }
+        />
         <Route
           path="/home"
           element={
-            <PrivateRoute>
+            <PrivateRoute restricted>
               <Home />
             </PrivateRoute>
           }

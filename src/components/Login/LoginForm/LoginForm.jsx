@@ -1,30 +1,59 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import style from '../Login.module.css';
 import { Link } from 'react-router-dom';
 import { fetchLogin } from 'auth/fetchLogin';
-import axios from 'axios';
+import { useDispatch } from 'react-redux';
+import { login } from 'redux/auth/auth-operation';
+import { useLocation } from 'react-router-dom';
+import { useRef } from 'react';
 
 export const LoginForm = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [token, setToken] = useState('');
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    const storedToken = localStorage.getItem('token');
+    if (storedToken) {
+      setToken(storedToken);
+    }
+  }, []);
+  const location = useLocation();
+
+  const handleChange = ({ target: { name, value } }) => {
+    switch (name) {
+      case 'email':
+        setEmail(value);
+        break;
+      case 'password':
+        setPassword(value);
+        break;
+      default:
+        break;
+    }
+  };
 
   async function handleSubmit(event) {
+    // event.preventDefault();
+
+    // try {
+    //   const response = await fetchLogin({ email, password });
+
+    //   if (response.status === 200) {
+    //     localStorage.setItem('token', response.data.token);
+    //     setToken(response.data.token);
+    //     console.log('Token:', response.data.token);
+    //   } else {
+    //     throw new Error('Error occurred during login');
+    //   }
+    // } catch (error) {
+    //   console.error(error.message);
+    // }
     event.preventDefault();
-
-    try {
-      const response = await fetchLogin({ email, password });
-
-      if (response.status === 200) {
-        localStorage.setItem('token', response.data.token);
-        setToken(response.data.token);
-        console.log('Token:', response.data.token);
-      } else {
-        throw new Error('Error occurred during login');
-      }
-    } catch (error) {
-      console.error(error.message);
-    }
+    dispatch(login({ email, password }));
+    setEmail('');
+    setPassword('');
   }
 
   return (
@@ -39,7 +68,7 @@ export const LoginForm = () => {
             <input
               className={style.login_input}
               value={email}
-              onChange={e => setEmail(e.target.value)}
+              onChange={handleChange}
               name="email"
               type="email"
               id="email"
@@ -51,21 +80,21 @@ export const LoginForm = () => {
             <input
               className={style.login_input}
               value={password}
-              onChange={e => setPassword(e.target.value)}
+              onChange={handleChange}
               name="password"
               type="password"
               id="password"
               placeholder="************"
             />
           </label>
-          <Link
+          {/* <Link
             style={{ color: 'inherit', textDecoration: 'inherit' }}
             to="/home"
-          >
-            <button className={style.login_btn} type="submit">
-              Login
-            </button>
-          </Link>
+          > */}
+          <button className={style.login_btn} type="submit">
+            Login
+          </button>
+          {/* </Link> */}
         </form>
       </div>
     </div>
